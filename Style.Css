@@ -9,6 +9,7 @@ body{
     background-color: black;
 }
 #navbar{
+    z-index: 11;
     position: sticky;
     top: 0px;
     left: 0px;
@@ -145,6 +146,7 @@ body{
 /* services styling */
 
 #services{
+    z-index: 10;
     padding: 90px 2px;
     display: flex;
     flex-direction: column;
