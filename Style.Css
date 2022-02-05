@@ -1,0 +1,268 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+}
+#navbar{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    height: 83px;
+}
+#navbar::before{
+    content: "";
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 3px 22px;
+    color: white;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 22px;
+}
+#navbar img{
+    position: absolute;
+    top: 24px;
+    right: 34px;
+    width: 31px;
+    border: 2px solid white;
+    background-color: white;
+}
+#navbar img{
+    z-index: 3;
+}
+#navbar input{
+    z-index: 10;
+    position: absolute;
+    right: 76px;
+    width: 353px;
+    height: 33px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 22px;    
+}
+#navbar button:hover{
+    cursor: pointer;
+}
+
+/* Home Styling */
+
+#home{
+    font-family: 'Quintessential', cursive;
+    display: flex;
+    flex-direction: column;
+    height: 649px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url("homeback.jpg");
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#home h1{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+#home img{
+    width: 272px;
+    margin: 40px;
+}
+#home p{
+    padding: 6px 52px;
+    width: 1276px;
+}
+
+/* about styling */
+
+#about{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 790px;
+    font-family: 'Short Stack', cursive;
+}
+#about::before{
+    content: "";
+    position: absolute;
+    top: 759px;
+    left: 0px;
+    background: url("about.jpg");
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#about p{
+    padding: 50px 2px;
+    width: 1139px;
+}
+#about h2{
+    font-size: 40px;
+}
+
+/* services styling */
+
+#services{
+    padding: 90px 2px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    top: 0px;
+    align-items: center;
+    justify-content: center;
+
+}
+#services h1{
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 40px;
+}
+#services .box{
+    margin: 73px;
+    padding: 35px;
+    width: 568px;
+    border: 2px solid brown;
+}
+#services .box img{
+    padding: 22px 234px;
+    width: 90px;
+    justify-content: center;
+
+}
+#services .box p{
+    padding: 6px;
+    text-align: center;
+}
+
+/* apply styling */
+
+#apply{
+    color: black;
+}
+.container{
+    border: 2px solid red;
+    background-color: rgb(253 189 189 / 77%);
+    border-radius: 22px;
+    margin: 139px auto;
+    padding: 28px;
+    width: 425px;
+    align-items: center;
+    justify-content: center
+
+}
+.container::before{
+    content: "";
+    background: url("job.jpg");
+    position: absolute;
+    top: 3064px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+.container input{
+    margin: 12px;
+    padding: 4px;
+    width: 333px;
+    font-size: 18px;
+}
+.container h1{
+    text-align: center;
+    font-size: 34px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: auto;
+    width: 175px;
+    padding: 32px;
+}
+.container button{  
+    border-radius: 22px;  
+    margin: 33px 46px;
+    width: 117px;
+}
+.container button:hover{
+    cursor: pointer;
+}
+
+/* contact section */
+
+#contact{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#contact::before{
+    content: "";
+    background: url("contact.jpg");
+    position: absolute;
+    top: 3824px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+.details{
+    position: relative;
+    top: 180px;
+    margin: auto;
+    width: 777px;
+}
+.details h1{
+    border: 2px solid white;
+    border-radius: 38px;
+    color: rgb(136 109 180);
+    font-size: 48px;
+    margin:27px ;
+    text-align: center;
+}
+.details h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 23px;
+    margin: 99px;
+    text-align: center;
+}
+.details h2 a{
+    color: white;
+}
