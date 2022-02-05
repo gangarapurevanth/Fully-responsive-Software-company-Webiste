@@ -48,18 +48,20 @@ body{
     border-radius: 22px;
 }
 #navbar img{
+    border-bottom-right-radius: 22px;
+    border-top-right-radius: 22px;
+    padding: 4px;
     position: absolute;
-    top: 24px;
-    right: 34px;
-    width: 31px;
+    top: 25px;
+    right: 45px;
+    width: 21px;
     border: 2px solid white;
     background-color: white;
 }
-#navbar img{
-    z-index: 3;
-}
 #navbar input{
-    z-index: 10;
+    border-bottom-left-radius: 22px;
+    border-top-left-radius: 22px;
+    border: none;
     position: absolute;
     right: 76px;
     width: 353px;
